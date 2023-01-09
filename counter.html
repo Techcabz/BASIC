@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Hiding the counter element. -->
+    <p id="counter" hidden>0</p>
+    <form method="POST" id="register">
+        <input name="name" id="name" />
+        <button type="submit" id="register_btn">submit</button>
+        <p id="error_status"></p>
+    </form>
+
+
+    <script>
+
+        let register = document.querySelector("#register");
+        let register_btn = document.querySelector("#register_btn");
+
+        /* Checking if the cookie is set and if it is, it is setting the value of seconds to the value of
+        the cookie. If the cookie is not set, it is setting the value of seconds to 60. */
+        var seconds = getCookie('countdown') ? getCookie('countdown') : 60;
+        var timer;
+
+        register.addEventListener("submit", (e) => {
+            e.preventDefault();
+            // Getting the value of the counter element.
+            var counter = document.getElementById("counter");
+            var count = counter.textContent;
+            //Incrementing the value of count by 1. 
+            count++;
+            // Setting the text content of the counter element to the value of count.
+            counter.textContent = count;
+            // This is the code that starts the timer. 3 failed attemps
+         
+            if(count >= 1){
+                document.getElementById("error_status").innerHTML = `2 attempts remaining`;
+            }
+            if(count >= 2){
+                document.getElementById("error_status").innerHTML = `1 attempts remaining`;
+            }
+            if (count >= 3) {
+                alert(0)
+                register_btn.disabled = true;
+                timer = window.setInterval(function () {
+                    myFunction();
+
+                }, 1000)
+            }
+        })
+
+
+        // Checking if the cookie is set and if it is, it is running the function every second. 
+        window.onload = () => {
+            if (getCookie('countdown') != "") {
+                register_btn.disabled = true;
+                timer = window.setInterval(function () {
+                    myFunction();
+                   
+                }, 1000)
+            }
+        }
+
+        /* This function is checking if the seconds are less than 60, if they are, it is setting the
+        innerHTML of the timer element to the value of seconds. It is also setting the cookie to the
+        value of seconds. If the seconds are greater than 0, it is decrementing the value of seconds
+        by 1. If the seconds are not greater than 0, it is clearing the interval and setting the
+        cookie to 0. */
+        function myFunction() {
+            if (seconds < 60) {
+                document.getElementById("error_status").innerHTML = `There have been too many login failures from your network in a short time period. Please wait and try again later. ${seconds}s`;
+                setCookie('countdown', seconds, 1);
+            }
+            if (seconds > 0) {
+                seconds--;
+
+            } else {
+                clearInterval(timer);
+                setCookie('countdown', 0, 1);
+                register_btn.disabled = false;
+                document.getElementById("timer").innerHTML = "";
+            }
+        }
+
+        // Setting the cookie to the value of seconds. 
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+
+        // Getting the value of the cookie. 
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+    </script>
+
+</body>
+
+</html>

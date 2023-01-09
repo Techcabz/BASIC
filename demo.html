@@ -9,288 +9,69 @@
     <title>Document</title>
     <style>
         * {
-            padding: 0px;
-            margin: 0px;
-            text-decoration: none;
-            list-style: none;
+            padding: 0;
+            margin: 0;
             box-sizing: border-box;
         }
 
-        .data {
-
-            background: url(bck.jpg);
+        .container {
+            width: 100%;
             height: 100vh;
-            margin-left: 250px;
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
         }
 
+        .container .side-bar {
+            width: 20%;
+            background-color: #112e26;
+            line-height: 10vh;
+        }
 
-        nav {
-            background: #112e26;
-            line-height: 100px;
-            position: fixed;
+        .wrapper-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper-container .navbar {
+            background-color: #112e26;
+            line-height: 15vh;
             width: 100%;
         }
 
-        label {
-            line-height: 90px;
-            font-size: 40px;
-            color: white;
-            font-weight: 200;
-            margin-left: 90px;
-            cursor: pointer;
-        }
-
-        nav ul {
-            float: right;
-            margin-left: 50px;
-        }
-
-        nav ul li {
-            line-height: 80px;
-            margin: 0 0px;
-        }
-
-
-        nav ul li a {
-            color: white;
-            font-size: 25px;
-            padding: 0px 0px;
-            font-weight: 600;
-            background-color: rgb(55, 34, 246);
-            border-radius: 15px;
-
-        }
-
-        nav ul li a:hover {
-            background-color: rgb(83, 40, 200);
-            color: white;
-            transition: 0.5s;
-
-        }
-
-        .side-menu {
-            position: fixed;
-            background: #112e26;
-            width: 250px;
-            height: 1500%;
-            margin-top: 0px;
-
-        }
-
-        .side-menu center img {
-            height: 120px;
-            width: 120px;
-            border-radius: 50%;
-            margin-top: 20px;
-            border: 3px solid white;
-
-        }
-
-        .side-menu center h2 {
-            color: white;
-        }
-
-        .side-menu a {
-            display: block;
-            line-height: 50px;
-            color: white;
-            transition: 0.5s;
-        }
-
-
-        .side-menu a:hover {
-            background: rgb(20, 54, 165);
-            padding-left: 0px;
-        }
-
-        side-menu span {
-            font-size: 15px;
-            margin-left: 0px;
-            color: white;
-        }
-
-        side-menu i {
-            font-size: 15px;
-            margin-left: 0px;
-            color: white;
-        }
-
-
-
-        nav .menu-bar {
-
-            float: right;
-            margin-top: 30px;
-            display: none;
-        }
-
-        #menu {
-
-            display: none;
-        }
-
-
-        .side-menu .Exit {
-
-            display: none;
-
-        }
-
-        @media (max-width: 850px) {
-
-            .side-menu a span {
-
-                display: none;
-
-            }
-
-            .side-menu center {
-
-                display: none;
-
-            }
-
-            .side-menu {
-
-                width: 100px;
-
-            }
-
-            .side-menu a i {
-
-
-                display: block;
-                line-height: 80px;
-                text-align: center;
-                margin-left: 0;
-                font-size: 35px;
-            }
-
-            .data {
-
-                margin-left: 100px;
-
-            }
-
-
-
-        }
-
-        @media(max-width:650px) {
-
-            .data {
-
-                display: none;
-
-
-            }
-
-            nav ul {
-
-                display: none;
-
-            }
-
-
-            .side-menu {
-
-                width: 100%;
-                text-align: center;
-                left: 100%;
-                background-color: #4c516d;
-                transition: all 0.5s;
-
-
-            }
-
-
-            .side-menu a i {
-
-                display: none;
-
-            }
-
-            .side-menu a span {
-
-                display: block;
-
-
-            }
-
-            nav .menu-bar {
-
-                display: block;
-
-
-            }
-
-        }
-
-        #menu:checked~.side-menu {
-
-            left: 0;
-
-
+        .wrapper-container .main {
+            width: 100%;
+            height: 100%;
+            background-image: url('image.jpg');
+            background-position: center;
+            object-fit: cover;
         }
     </style>
-
+    <script>
+        let demo = document.getElementById("demo").addEventListener("click", func);
+        let func = () => {
+            alert(0)
+        }
+    </script>
 </head>
 
 
 <body>
-    <nav>
-
-        <center><label>T S U J I R I</label></center>
-
-        <label for"menu" class="menu-bar">
-
-            <i class="fa fa-bars"></i>
-        </label>
-
-    </nav>
-
-    <div class="side-menu">
-
-        <center>
-            <img src="image.jpg">
-            <br><br>
-
-            <h2>Elsa Eugenio</h2>
-        </center>
-
-        <ul>
-
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/Home.html.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-home">&nbsp&nbsp&nbsp</i><span>HOME</span></a>
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/About.html.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-user-o">&nbsp&nbsp&nbsp</i><span>ABOUT</span></a>
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/History.html.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-history">&nbsp&nbsp&nbsp</i><span>HISTORY</span></a>
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/Product.html.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-shopping-basket">&nbsp&nbsp&nbsp</i><span>PRODUCT</span></a>
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/Menu.html.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-coffee">&nbsp&nbsp&nbsp</i><span>MENU</span></a>
-            <a href="C:/Users/Admin/Dropbox/PC/Desktop/PROJECT_ITC/Contact%20page.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-phone">&nbsp&nbsp&nbsp</i><span>CONTACT</span></a>
-            <a href="https://web.facebook.com/tsujiri.ph/?_rdc=1&_rdr">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-facebook-f">&nbsp&nbsp&nbsp</i><span>FACEBOOK</span></a>
-            <a href="https://www.instagram.com/tsujiri_ph/?hl=en">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-instagram">&nbsp&nbsp&nbsp</i><span>INSTAGRAM</span></a>
-            <a href="https://twitter.com/tsujiri_global?lang=en">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
-                    class="fa fa-twitter">&nbsp&nbsp&nbsp</i><span>TWITTER</span></a>
-
-        </ul>
-
+    <div class="container">
+        <div class="side-bar">
+            navbar
+        </div>
+        <div class="wrapper-container">
+            <div class="navbar">
+                side menu
+            </div>
+            <div class="main">
+                main
+            </div>
+            <input type="text" id="demo">
+        </div>
     </div>
-
-    <div class="data">
-
-    </div>
-
-
-    <br><br><br><br>
 </body>
 
 </html>
