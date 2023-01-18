@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <iframe srcdoc="&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        
+        &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+        
+        &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+        &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+        
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                    initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+                &lt;style&gt;
+                    #map_fca346f5e8e02b3ce52aa4132b9ce806 {
+                        position: relative;
+                        width: 100.0%;
+                        height: 100.0%;
+                        left: 0.0%;
+                        top: 0.0%;
+                    }
+                &lt;/style&gt;
+            
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+                &lt;div class=&quot;folium-map&quot; id=&quot;map_fca346f5e8e02b3ce52aa4132b9ce806&quot; &gt;&lt;/div&gt;
+            
+    &lt;/body&gt;
+    &lt;script&gt;
+        
+        
+                var map_fca346f5e8e02b3ce52aa4132b9ce806 = L.map(
+                    &quot;map_fca346f5e8e02b3ce52aa4132b9ce806&quot;,
+                    {
+                        center: [9.052027666244138, 125.58435061959692],
+                        crs: L.CRS.EPSG3857,
+                        zoom: 15,
+                        zoomControl: true,
+                        preferCanvas: false,
+                    }
+                );
+    
+                
+    
+            
+        
+                var tile_layer_52249112a308720c9175e158282af8cd = L.tileLayer(
+                    &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var marker_bc5ba6f1504e70792fc3cc5604f9234b = L.marker(
+                    [9.050440437098404, 125.58840045908478],
+                    {}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var icon_1e5ce3ab92a0f31c23e269861952d42e = L.AwesomeMarkers.icon(
+                    {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building-o&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;red&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+                );
+                marker_bc5ba6f1504e70792fc3cc5604f9234b.setIcon(icon_1e5ce3ab92a0f31c23e269861952d42e);
+            
+        
+            var popup_c3f285a9c72096b057fac23668e0ef3c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+    
+            
+                var html_f8e165c8922c0f66dd3757b484f9be7a = $(`&lt;div id=&quot;html_f8e165c8922c0f66dd3757b484f9be7a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;img style=&#x27;width:300px;&#x27;src=&#x27;https://shorturl.at/pNPR5&#x27; alt=&#x27;R.T.R Public Market&#x27;&gt; &lt;h4&gt;R.T.R Public Market.&lt;/h4&gt;&lt;/div&gt;`)[0];
+                popup_c3f285a9c72096b057fac23668e0ef3c.setContent(html_f8e165c8922c0f66dd3757b484f9be7a);
+            
+    
+            marker_bc5ba6f1504e70792fc3cc5604f9234b.bindPopup(popup_c3f285a9c72096b057fac23668e0ef3c)
+            ;
+    
+            
+        
+        
+                marker_bc5ba6f1504e70792fc3cc5604f9234b.bindTooltip(
+                    `&lt;div&gt;
+                         R.T.R Public Market
+                     &lt;/div&gt;`,
+                    {&quot;sticky&quot;: true}
+                );
+            
+        
+                var marker_9ba9059431682c24e0bf1791f0f952fa = L.marker(
+                    [9.050912585335663, 125.58401473769526],
+                    {}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var icon_1f1041baeafcc034c2d00695405459a3 = L.AwesomeMarkers.icon(
+                    {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;graduation-cap&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+                );
+                marker_9ba9059431682c24e0bf1791f0f952fa.setIcon(icon_1f1041baeafcc034c2d00695405459a3);
+            
+        
+            var popup_158e02dca5ba189e0ecfabd4490de214 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+    
+            
+                var html_c57655b9ec13b5e7f8e6aac5a75faaf2 = $(`&lt;div id=&quot;html_c57655b9ec13b5e7f8e6aac5a75faaf2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;img style=&#x27;width:300px;&#x27;src=&#x27;https://shorturl.at/cilM6&#x27; alt=&#x27;Agay National High School&#x27;&gt; &lt;h4&gt;Agay National High School.&lt;/h4&gt;&lt;/div&gt;`)[0];
+                popup_158e02dca5ba189e0ecfabd4490de214.setContent(html_c57655b9ec13b5e7f8e6aac5a75faaf2);
+            
+    
+            marker_9ba9059431682c24e0bf1791f0f952fa.bindPopup(popup_158e02dca5ba189e0ecfabd4490de214)
+            ;
+    
+            
+        
+        
+                marker_9ba9059431682c24e0bf1791f0f952fa.bindTooltip(
+                    `&lt;div&gt;
+                         Agay National High School
+                     &lt;/div&gt;`,
+                    {&quot;sticky&quot;: true}
+                );
+            
+        
+                var marker_6199c318c1e539ec59f9a59256d1e07b = L.marker(
+                    [9.050972660799621, 125.58282827548685],
+                    {}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var icon_ca9545c023910c8467eb896703ec2505 = L.AwesomeMarkers.icon(
+                    {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;blue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+                );
+                marker_6199c318c1e539ec59f9a59256d1e07b.setIcon(icon_ca9545c023910c8467eb896703ec2505);
+            
+        
+            var popup_4d6f7ac3fd6a9e78e8f0ee08051dbd22 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+    
+            
+                var html_77bd553badb791fbf0e11cba00e57d96 = $(`&lt;div id=&quot;html_77bd553badb791fbf0e11cba00e57d96&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;&lt;img style=&#x27;width:300px;&#x27;src=&#x27;https://shorturl.at/hmrNY&#x27; alt=&#x27;R.T.R Evacuation Center&#x27;&gt; &lt;h4&gt;R.T.R Evacuation Center.&lt;/h4&gt;&lt;/div&gt;`)[0];
+                popup_4d6f7ac3fd6a9e78e8f0ee08051dbd22.setContent(html_77bd553badb791fbf0e11cba00e57d96);
+            
+    
+            marker_6199c318c1e539ec59f9a59256d1e07b.bindPopup(popup_4d6f7ac3fd6a9e78e8f0ee08051dbd22)
+            ;
+    
+            
+        
+        
+                marker_6199c318c1e539ec59f9a59256d1e07b.bindTooltip(
+                    `&lt;div&gt;
+                         R.T.R Evacuation Center
+                     &lt;/div&gt;`,
+                    {&quot;sticky&quot;: true}
+                );
+            
+        
+                var tile_layer_0dc6d7c5d6eb54444a6995ea718ec45c = L.tileLayer(
+                    &quot;https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;OpenTopoMap&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var tile_layer_88cdd7f8b5724c44206f48e50764b3f7 = L.tileLayer(
+                    &quot;https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;OpenStreetMap.France&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var tile_layer_dbf49e55f32081d95ff3b565626041c5 = L.tileLayer(
+                    &quot;https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;OpenStreetMap.HOT&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var tile_layer_8db51c98ff7f3074591acd7f6373414e = L.tileLayer(
+                    &quot;https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;OpenStreetMap.DE&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+            
+        
+                var layer_control_6383672c0e59c4e8d5563e88dbfdae88 = {
+                    base_layers : {
+                        &quot;openstreetmap&quot; : tile_layer_52249112a308720c9175e158282af8cd,
+                        &quot;OpenTopoMap&quot; : tile_layer_0dc6d7c5d6eb54444a6995ea718ec45c,
+                        &quot;OpenStreetMap France&quot; : tile_layer_88cdd7f8b5724c44206f48e50764b3f7,
+                        &quot;OpenStreetMap Hot&quot; : tile_layer_dbf49e55f32081d95ff3b565626041c5,
+                        &quot;OpenStreetMap.DE&quot; : tile_layer_8db51c98ff7f3074591acd7f6373414e,
+                    },
+                    overlays :  {
+                    },
+                };
+                L.control.layers(
+                    layer_control_6383672c0e59c4e8d5563e88dbfdae88.base_layers,
+                    layer_control_6383672c0e59c4e8d5563e88dbfdae88.overlays,
+                    {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
+                ).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+                tile_layer_0dc6d7c5d6eb54444a6995ea718ec45c.remove();
+                tile_layer_88cdd7f8b5724c44206f48e50764b3f7.remove();
+                tile_layer_dbf49e55f32081d95ff3b565626041c5.remove();
+                tile_layer_8db51c98ff7f3074591acd7f6373414e.remove();
+            
+        
+                    function newMarker(e){
+                        var new_mark = L.marker().setLatLng(e.latlng).addTo(map_fca346f5e8e02b3ce52aa4132b9ce806);
+                        new_mark.dragging.enable();
+                        new_mark.on(&#x27;dblclick&#x27;, function(e){ map_fca346f5e8e02b3ce52aa4132b9ce806.removeLayer(e.target)})
+                        var lat = e.latlng.lat.toFixed(4),
+                           lng = e.latlng.lng.toFixed(4);
+                        new_mark.bindPopup(&quot;Waypoint&quot;);
+                        };
+                    map_fca346f5e8e02b3ce52aa4132b9ce806.on(&#x27;click&#x27;, newMarker);
+                
+    &lt;/script&gt;
+    &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+</body>
+
+</html>

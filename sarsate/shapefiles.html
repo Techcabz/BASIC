@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeFiles</title>
+</head>
+
+<body>
+    <iframe srcdoc="&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        
+        &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+        
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+        
+        &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+        &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+        
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                    initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+                &lt;style&gt;
+                    #map_6c6b053312165c9fa0860bad39731c59 {
+                        position: relative;
+                        width: 100.0%;
+                        height: 100.0%;
+                        left: 0.0%;
+                        top: 0.0%;
+                    }
+                &lt;/style&gt;
+            
+        
+                        &lt;style&gt;
+                            .foliumtooltip {
+                                
+                            }
+                           .foliumtooltip table{
+                                margin: auto;
+                            }
+                            .foliumtooltip tr{
+                                text-align: left;
+                            }
+                            .foliumtooltip th{
+                                padding: 2px; padding-right: 8px;
+                            }
+                        &lt;/style&gt;
+                
+        
+                        &lt;style&gt;
+                            .foliumtooltip {
+                                
+                            }
+                           .foliumtooltip table{
+                                margin: auto;
+                            }
+                            .foliumtooltip tr{
+                                text-align: left;
+                            }
+                            .foliumtooltip th{
+                                padding: 2px; padding-right: 8px;
+                            }
+                        &lt;/style&gt;
+                
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+                &lt;div class=&quot;folium-map&quot; id=&quot;map_6c6b053312165c9fa0860bad39731c59&quot; &gt;&lt;/div&gt;
+            
+    &lt;/body&gt;
+    &lt;script&gt;
+        
+        
+                var map_6c6b053312165c9fa0860bad39731c59 = L.map(
+                    &quot;map_6c6b053312165c9fa0860bad39731c59&quot;,
+                    {
+                        center: [9.052027666244138, 125.58435061959692],
+                        crs: L.CRS.EPSG3857,
+                        zoom: 15,
+                        zoomControl: true,
+                        preferCanvas: false,
+                    }
+                );
+    
+                
+    
+            
+        
+                var tile_layer_cfff6251420570a5d47ef9565b2b0275 = L.tileLayer(
+                    &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                    {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                ).addTo(map_6c6b053312165c9fa0860bad39731c59);
+            
+        
+            function geo_json_d0744da03f87de5f76f5b9c876554c23_styler(feature) {
+                switch(feature.properties.stroke) {
+                    case &quot;#2EC4D6&quot;: 
+                        return {&quot;color&quot;: &quot;#2EC4D6&quot;, &quot;weight&quot;: 5};
+                    case &quot;#000000&quot;: 
+                        return {&quot;color&quot;: &quot;#000000&quot;, &quot;weight&quot;: 5};
+                    default:
+                        return {&quot;color&quot;: &quot;#FD0001&quot;, &quot;weight&quot;: 5};
+                }
+            }
+    
+            function geo_json_d0744da03f87de5f76f5b9c876554c23_onEachFeature(feature, layer) {
+                layer.on({
+                });
+            };
+            var geo_json_d0744da03f87de5f76f5b9c876554c23 = L.geoJson(null, {
+                    onEachFeature: geo_json_d0744da03f87de5f76f5b9c876554c23_onEachFeature,
+                
+                    style: geo_json_d0744da03f87de5f76f5b9c876554c23_styler,
+            });
+    
+            function geo_json_d0744da03f87de5f76f5b9c876554c23_add (data) {
+                geo_json_d0744da03f87de5f76f5b9c876554c23
+                    .addData(data)
+                    .addTo(map_6c6b053312165c9fa0860bad39731c59);
+            }
+                geo_json_d0744da03f87de5f76f5b9c876554c23_add({&quot;features&quot;: [{&quot;geometry&quot;: {&quot;coordinates&quot;: [[125.58815166674896, 9.051550717608407], [125.5838655771584, 9.049535133037722], [125.58098267165894, 9.047746292271242], [125.57784464178002, 9.04631017423371], [125.5766965820684, 9.045453539692687], [125.57590569648909, 9.044370146030971], [125.57521686066133, 9.042959209860825], [125.57485968652901, 9.042052176546335], [125.57498724871874, 9.041220727333197], [125.5742779361712, 9.040647110520268], [125.57362503877818, 9.040278660889896], [125.57331413525708, 9.039971619243644], [125.57269232439944, 9.038743440420703]], &quot;type&quot;: &quot;LineString&quot;}, &quot;properties&quot;: {&quot;path&quot;: &quot;Route#2&quot;, &quot;stroke&quot;: &quot;#FD0001&quot;, &quot;stroke-opacity&quot;: 1, &quot;stroke-width&quot;: 5}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;geometry&quot;: {&quot;coordinates&quot;: [[125.57335791668027, 9.040277864062531], [125.5708927242485, 9.045482769463007], [125.57427548663748, 9.050790803602055], [125.58015820950789, 9.058850505046962], [125.58097202497635, 9.059768978002296], [125.58176258857526, 9.060274137126783], [125.5835529826058, 9.06114668303276]], &quot;type&quot;: &quot;LineString&quot;}, &quot;properties&quot;: {&quot;path&quot;: &quot;Route#3&quot;, &quot;stroke&quot;: &quot;#2EC4D6&quot;, &quot;stroke-opacity&quot;: 1, &quot;stroke-width&quot;: 5}, &quot;type&quot;: &quot;Feature&quot;}, {&quot;geometry&quot;: {&quot;coordinates&quot;: [[125.58334419484635, 9.061814566123871], [125.59034135932626, 9.047102259878486]], &quot;type&quot;: &quot;LineString&quot;}, &quot;properties&quot;: {&quot;path&quot;: &quot;Route#1&quot;, &quot;stroke&quot;: &quot;#000000&quot;, &quot;stroke-opacity&quot;: 1, &quot;stroke-width&quot;: 5}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+    
+            
+        
+        geo_json_d0744da03f87de5f76f5b9c876554c23.bindTooltip(
+        function(layer){
+        let div = L.DomUtil.create(&#x27;div&#x27;);
+        
+        let handleObject = feature=&gt;typeof(feature)==&#x27;object&#x27; ? JSON.stringify(feature) : feature;
+        let fields = [&quot;path&quot;];
+        let aliases = [&quot;path&quot;];
+        let table = &#x27;&lt;table&gt;&#x27; +
+            String(
+            fields.map(
+            (v,i)=&gt;
+            `&lt;tr&gt;
+                &lt;th&gt;${aliases[i]}&lt;/th&gt;
+                
+                &lt;td&gt;${handleObject(layer.feature.properties[v])}&lt;/td&gt;
+            &lt;/tr&gt;`).join(&#x27;&#x27;))
+        +&#x27;&lt;/table&gt;&#x27;;
+        div.innerHTML=table;
+        
+        return div
+        }
+        ,{&quot;className&quot;: &quot;foliumtooltip&quot;, &quot;sticky&quot;: true});
+                         
+        
+            function geo_json_1b42f7ffbbce354234793f940747ddb8_styler(feature) {
+                switch(feature.properties.name) {
+                    default:
+                        return {&quot;color&quot;: &quot;green&quot;, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;weight&quot;: 2};
+                }
+            }
+    
+            function geo_json_1b42f7ffbbce354234793f940747ddb8_onEachFeature(feature, layer) {
+                layer.on({
+                });
+            };
+            var geo_json_1b42f7ffbbce354234793f940747ddb8 = L.geoJson(null, {
+                    onEachFeature: geo_json_1b42f7ffbbce354234793f940747ddb8_onEachFeature,
+                
+                    style: geo_json_1b42f7ffbbce354234793f940747ddb8_styler,
+            });
+    
+            function geo_json_1b42f7ffbbce354234793f940747ddb8_add (data) {
+                geo_json_1b42f7ffbbce354234793f940747ddb8
+                    .addData(data)
+                    .addTo(map_6c6b053312165c9fa0860bad39731c59);
+            }
+                geo_json_1b42f7ffbbce354234793f940747ddb8_add({&quot;features&quot;: [{&quot;geometry&quot;: {&quot;coordinates&quot;: [[125.5869074831354, 9.054332231126182], [125.58022600261904, 9.051189557038029], [125.58165873246139, 9.047992436174198], [125.58369761723833, 9.049312102272495], [125.58564006827453, 9.050414087779671], [125.58834021297906, 9.051611302775129], [125.58696258812967, 9.054345835716305]], &quot;type&quot;: &quot;LineString&quot;}, &quot;properties&quot;: {&quot;name&quot;: &quot;land&quot;, &quot;stroke&quot;: &quot;#38A852&quot;, &quot;stroke-opacity&quot;: 1, &quot;stroke-width&quot;: 5}, &quot;type&quot;: &quot;Feature&quot;}], &quot;type&quot;: &quot;FeatureCollection&quot;});
+    
+            
+        
+        geo_json_1b42f7ffbbce354234793f940747ddb8.bindTooltip(
+        function(layer){
+        let div = L.DomUtil.create(&#x27;div&#x27;);
+        
+        let handleObject = feature=&gt;typeof(feature)==&#x27;object&#x27; ? JSON.stringify(feature) : feature;
+        let fields = [&quot;name&quot;];
+        let aliases = [&quot;name&quot;];
+        let table = &#x27;&lt;table&gt;&#x27; +
+            String(
+            fields.map(
+            (v,i)=&gt;
+            `&lt;tr&gt;
+                &lt;th&gt;${aliases[i]}&lt;/th&gt;
+                
+                &lt;td&gt;${handleObject(layer.feature.properties[v])}&lt;/td&gt;
+            &lt;/tr&gt;`).join(&#x27;&#x27;))
+        +&#x27;&lt;/table&gt;&#x27;;
+        div.innerHTML=table;
+        
+        return div
+        }
+        ,{&quot;className&quot;: &quot;foliumtooltip&quot;, &quot;sticky&quot;: true});
+                         
+        
+                var layer_control_40e18e74d92cfbe3d996126fcfabb216 = {
+                    base_layers : {
+                        &quot;openstreetmap&quot; : tile_layer_cfff6251420570a5d47ef9565b2b0275,
+                    },
+                    overlays :  {
+                        &quot;path&quot; : geo_json_d0744da03f87de5f76f5b9c876554c23,
+                        &quot;Land&quot; : geo_json_1b42f7ffbbce354234793f940747ddb8,
+                    },
+                };
+                L.control.layers(
+                    layer_control_40e18e74d92cfbe3d996126fcfabb216.base_layers,
+                    layer_control_40e18e74d92cfbe3d996126fcfabb216.overlays,
+                    {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
+                ).addTo(map_6c6b053312165c9fa0860bad39731c59);
+            
+    &lt;/script&gt;
+    &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+</body>
+
+</html>
